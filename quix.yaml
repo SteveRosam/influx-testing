@@ -40,3 +40,4 @@ deployments:
 topics:
   - name: f1-data
   - name: input-data
+  - name: hard-braking
