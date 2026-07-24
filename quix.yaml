@@ -35,6 +35,9 @@ deployments:
       limits:
         cpu: 200
         memory: 500
+    variables:
+      - name: input
+        value: f1-data
 
 # This section describes the Topics of the data pipeline
 topics:
