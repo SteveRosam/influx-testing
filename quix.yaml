@@ -43,6 +43,14 @@ deployments:
       limits:
         cpu: 200
         memory: 500
+  - name: InfluxDB 3.0 Sink 2
+    application: influxdb-3.0-sink-2
+    version: latest
+    deploymentType: Service
+    resources:
+      limits:
+        cpu: 200
+        memory: 500
 
 # This section describes the Topics of the data pipeline
 topics:
