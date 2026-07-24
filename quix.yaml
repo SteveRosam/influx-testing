@@ -20,3 +20,6 @@ deployments:
         - port: 80
           targetPort: 8181
 
+# This section describes the Topics of the data pipeline
+topics:
+  - name: f1-data
