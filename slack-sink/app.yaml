@@ -1,0 +1,21 @@
+name: slack-sink
+language: python
+variables:
+  - name: input
+    inputType: InputTopic
+    description: Name of the input topic to listen to.
+    defaultValue: hard-braking
+    required: true
+  - name: webhook_url
+    inputType: FreeText
+    description: The webhook url to send notifications to
+    defaultValue: dfsdfsdf
+    required: true
+  - name: consumer_group_name
+    inputType: FreeText
+    description: Kafka consumer group name for the Slack notifications destination
+    defaultValue: slack-notifications
+dockerfile: dockerfile
+runEntryPoint: main.py
+defaultFile: quix_function.py
+libraryItemId: slack-destination
