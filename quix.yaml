@@ -1,0 +1,22 @@
+# Quix Project Descriptor
+# This file describes the data pipeline and configuration of resources of a Quix Project.
+
+metadata:
+  version: 2.0
+
+# This section describes the Deployments of the data pipeline
+deployments:
+  - name: InfluxDB v3 alpha
+    application: influxdb-v3-alpha
+    version: latest
+    deploymentType: Service
+    resources:
+      limits:
+        cpu: 1000
+        memory: 8000
+    network:
+      serviceName: influxdb3
+      ports:
+        - port: 80
+          targetPort: 8181
+
