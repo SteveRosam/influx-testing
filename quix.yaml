@@ -27,6 +27,14 @@ deployments:
       limits:
         cpu: 200
         memory: 200
+  - name: Slack Sink
+    application: slack-sink
+    version: latest
+    deploymentType: Service
+    resources:
+      limits:
+        cpu: 200
+        memory: 200
 
 # This section describes the Topics of the data pipeline
 topics:
